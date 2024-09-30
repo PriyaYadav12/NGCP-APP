@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "kalpataru",
+    "slug": "frontend",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "sdkVersion": "51.0.0",
+    "platforms": ["ios", "android"],
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#fff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "We need your location to show the map.",
+        "NSPhotoLibraryUsageDescription": "We need access to your photo library to update your profile picture.",
+        "NSCameraUsageDescription": "We need access to your camera to take a profile picture."
+      },
+      "bundleIdentifier": "kalpataru.test.build"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#fff"
+      },
+      "permissions": ["android.permission.DETECT_SCREEN_CAPTURE","ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"],
+      "package": "kalpataru.test.build",
+      "softwareKeyboardLayoutMode": "pan"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "198f44f0-6adf-43e7-a845-5b6efd4592a3"
+      }
+    },
+    "plugins": ["expo-font"]
+  }
+}
